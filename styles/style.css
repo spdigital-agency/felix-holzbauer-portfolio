@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    font-size: 62.5%;
+
+    /* Color Variables */
+
+    --primary: white;
+    --accent: black;
+
+    /* Sizing Variables */
+
+    --text-default: 3.2rem;
+    --text-big: 12.8rem;
+}
+    
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+
+header {
+    padding: 0 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    border-bottom: 3px solid black;
+}
+
+.header--logo-link {
+    text-decoration: none;
+}
+
+.header--logo {
+    margin: 0;
+    font-size: var(--text-default);
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.nav--list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 7.4rem;
+}
+
+.nav--link {
+    font-size: var(--text-default);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--accent);
+}
+
+.home--hero {
+    padding-left: 12rem;
+}
+
+.home--hero-text {
+    margin-top: 8rem;
+}
+
+.home--hero-text > h3 {
+    margin: 0;
+    font-size: var(--text-default);
+}
+
+.home--hero-text > h1 {
+    margin: 0;
+    font-size: var(--text-big);
+    font-weight: 900;
+}
