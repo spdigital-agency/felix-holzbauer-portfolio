@@ -10,7 +10,7 @@
 
     /* Sizing Variables */
 
-    --text-default: 3.2rem;
+    --text-default: 2.8rem;
     --text-big: 12.8rem;
 }
     
@@ -25,7 +25,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 10rem;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--accent);
 }
 
 .header--logo-link {
