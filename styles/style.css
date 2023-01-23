@@ -17,6 +17,7 @@
 body {
     margin: 0;
     font-family: Roboto;
+    background-color: var(--primary);
 }
 
 header {
@@ -54,6 +55,26 @@ header {
     color: var(--accent);
 }
 
+.dark-mode-toggle {
+    padding: 0;
+    width: 3.2rem;
+    border: none;
+    background-color: transparent;
+}
+
+.dark-mode-toggle:hover {
+    cursor: pointer;
+}
+
+.dark-mode-toggle > img {
+    width: 100%;
+    height: auto;
+}
+
+.dark-mode-on {
+    filter: invert(100%) sepia(0%) saturate(18%) hue-rotate(0deg) brightness(104%) contrast(100%);
+}
+
 .home--hero {
     padding-left: 12rem;
 }
@@ -65,10 +86,12 @@ header {
 .home--hero-text > h3 {
     margin: 0;
     font-size: var(--text-default);
+    color: var(--accent);
 }
 
 .home--hero-text > h1 {
     margin: 0;
     font-size: var(--text-big);
     font-weight: 900;
+    color: var(--accent);
 }
