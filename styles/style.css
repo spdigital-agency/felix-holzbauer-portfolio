@@ -111,6 +111,7 @@ header {
     font-weight: 900;
     margin: 0;
     margin-top: 8rem;
+    color: var(--accent);
 }
 
 .about--content-text {
@@ -119,6 +120,7 @@ header {
     max-width: 75ch;
     align-self: center;
     margin-top: 4rem;
+    color: var(--accent);
 }
 
 .contact-btn{
