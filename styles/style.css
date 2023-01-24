@@ -19,6 +19,7 @@ body {
     margin: 0;
     font-family: Roboto;
     background-color: var(--primary);
+    background-image: url("images/images/image (9).png");
 }
 
 header {
