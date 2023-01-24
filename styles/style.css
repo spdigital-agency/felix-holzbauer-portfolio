@@ -77,9 +77,9 @@ header {
 }
 
 .home--hero {
-    padding-left: 12rem;
+    padding: 0 12rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .home--hero-text {
@@ -122,74 +122,61 @@ header {
     color: var(--accent);
 }
 
-.contact-btn{
+.btn {
     align-self: center;
     width: max-content;
     font-size: var(--text-small);
     font-weight: bold;
     border: 3px solid var(--accent);
     border-right: 5px solid var(--accent);
-    border-bottom: a5px solid var(--accent);
+    border-bottom: 5px solid var(--accent);
     background-color: var(--primary);
     padding: 10px 20px;
+}
+
+.contact-btn{
     margin-top: 4rem;
 }
 
 .home--hero-img-container{
-  border: 3px solid black;
+  border: 3px solid var(--accent);
   margin-top: 8rem;  
 }
 
 .home--hero-img{
-    width:713px;
-    height: 412px;
-    border: 3px solid white;
+    width: auto;
+    height: 35rem;
+    border: 3px solid var(--primary);
 }
 
-.home--three{
+.home--projects{
+    margin-top: 12rem;
+    padding: 0 12rem;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
 }
 
-.home--three-img{
-    margin-top: 7rem;
-    border: 3px solid black;
+.home--projects-container {
+    display: flex;
+    justify-content: space-between;
 }
 
-.home--three-img-one{
-    width: 333,58px;
-    height: 420px;
-    border: 3px solid white;
-}
-
-.home--three-img-two{
-    width: 420px;
-    height: 420px;
-    border: 3px solid white;
-}
-
-.home--three-img-three{
-    width: 574px;
-    height: 420px;
-    border: 3px solid white;
-}
-
-.button-link{
+.home--projects-img-container{
     display: flex;
     justify-content: center;
-    text-decoration: none;
-    font-family: Roboto;
-    font-size: 28px;
+    align-items: center;
+    border: 3px solid var(--accent);
 }
 
-button{
-    width: 186px;
-    height: 61px;
-    font-family: "Roboto";
-    font-size: 28px;
-    text-align: center;
-    background-color: transparent;
-    box-sizing: border-box;
-    border:3px solid #000000;
+.home--project-img{
+    width: auto;
+    height: 35rem;
+    border: 3px solid var(--primary);
+}
+
+.project-btn {
+    margin-top: 6rem;
+    text-decoration: none;
+    color: var(--accent);
 }
 
