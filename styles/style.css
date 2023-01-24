@@ -101,17 +101,36 @@ header {
 
 .about--content {
     padding: 0 12rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .about--content-title {
     font-size: var(--text-big);
     font-weight: 900;
     margin: 0;
+    margin-top: 8rem;
 }
 
 .about--content-text {
     font-size: var(--text-small);
+    line-height: 1.6;
     max-width: 75ch;
+    align-self: center;
+    margin-top: 4rem;
+}
+
+.contact-btn{
+    align-self: center;
+    width: max-content;
+    font-size: var(--text-small);
+    font-weight: bold;
+    border: 3px solid var(--accent);
+    border-right: 5px solid var(--accent);
+    border-bottom: a5px solid var(--accent);
+    background-color: var(--primary);
+    padding: 10px 20px;
+    margin-top: 4rem;
 }
 
 .home--hero-img-container{
