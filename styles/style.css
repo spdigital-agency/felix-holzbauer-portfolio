@@ -78,6 +78,8 @@ header {
 
 .home--hero {
     padding-left: 12rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 .home--hero-text {
@@ -110,4 +112,15 @@ header {
 .about--content-text {
     font-size: var(--text-small);
     max-width: 75ch;
+}
+
+.home--hero-img-container{
+  border: 3px solid black;
+  margin-top: 8rem;  
+}
+
+.home--hero-img{
+    width:713px;
+    height: 412px;
+    border: 3px solid white;
 }
