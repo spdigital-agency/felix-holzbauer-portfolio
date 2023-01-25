@@ -21,6 +21,14 @@ body {
     background-color: var(--primary);
 }
 
+#home {
+    background-image: url('../images/icons/arrow.webp');
+    background-repeat: no-repeat;
+    background-position-x: 35vw;
+    background-position-y: 50vh;
+    background-size: 12vw;
+}
+
 header {
     padding: 0 12rem;
     display: flex;
