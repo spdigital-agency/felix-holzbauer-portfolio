@@ -139,6 +139,7 @@ header {
     border-right: 5px solid var(--accent);
     border-bottom: 5px solid var(--accent);
     background-color: var(--primary);
+    color: var(--accent);
     padding: 10px 20px;
 }
 
@@ -186,5 +187,42 @@ header {
     margin-top: 6rem;
     text-decoration: none;
     color: var(--accent);
+}
+
+.home--contact {
+    padding: 0 12rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.home--contact-title {
+    font-size: var(--text-big);
+    color: var(--accent);
+    font-weight: 900;
+    width: 8ch;
+}
+
+.home--contact-form {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    max-width: 66rem;
+}
+
+.home--contact-form > input:not([type="submit"]) {
+    height: 3rem;
+}
+
+.home--contact-form > input:not([type="submit"]),textarea {
+    border: 3px solid var(--accent);
+    font-size: var(--text-small);
+    font-weight: 600;
+    font-family: Roboto;
+    resize: none;
+    background-color: var(--primary);
+    color: var(--accent);
+    padding: 0 1rem;
 }
 
