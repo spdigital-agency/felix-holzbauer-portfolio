@@ -19,9 +19,16 @@ body {
     margin: 0;
     font-family: Roboto;
     background-color: var(--primary);
+    height: 100vh;
+    width: 100%;
+    scroll-behavior: smooth;
 }
 
-#home {
+#home > .home--background {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
     background-image: url('../images/icons/arrow.webp');
     background-repeat: no-repeat;
     background-position-x: 35vw;
@@ -148,8 +155,11 @@ header {
 }
 
 .home--hero-img-container{
-  border: 3px solid var(--accent);
-  margin-top: 8rem;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--accent);
+    margin-top: 8rem;  
 }
 
 .home--hero-img{
@@ -200,6 +210,7 @@ header {
     color: var(--accent);
     font-weight: 900;
     width: 8ch;
+    margin: 8rem 0;
 }
 
 .home--contact-form {
@@ -218,7 +229,7 @@ header {
 .home--contact-form > input:not([type="submit"]),textarea {
     border: 3px solid var(--accent);
     font-size: var(--text-small);
-    font-weight: 600;
+    font-weight: 500;
     font-family: Roboto;
     resize: none;
     background-color: var(--primary);
@@ -226,3 +237,36 @@ header {
     padding: 0 1rem;
 }
 
+.home--contact-form > input::placeholder, textarea::placeholder {
+    color: var(--accent);
+}
+
+footer {
+    margin-top: 12rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    border-top: 3px solid var(--accent);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.footer--link-container {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer--link {
+    text-decoration: none;
+    margin: 0;
+    color: var(--accent);
+}
+
+.copyright-notice {
+    margin: 0;
+    color: var(--accent);
+}
