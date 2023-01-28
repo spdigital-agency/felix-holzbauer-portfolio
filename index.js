@@ -9,7 +9,9 @@ const favicon = document.querySelector("link[rel~='icon']");
 function darkToggle() {
     if(darkMode === 'off') {
         darkToggleImg.classList.add('dark-mode-on');
-        homeArrow.classList.add('dark-mode-on');
+        if(document.URL.includes('home')) {
+            homeArrow.classList.add('dark-mode-on');
+        }
         root.style.setProperty('--primary', 'black');
         root.style.setProperty('--accent', 'white');
         favicon.href = './images/icons/favicon-white.png'
@@ -18,7 +20,9 @@ function darkToggle() {
         console.log(darkMode);
     } else {
         darkToggleImg.classList.remove('dark-mode-on');
-        homeArrow.classList.remove('dark-mode-on');
+        if(document.URL.includes('home')) {
+            homeArrow.classList.remove('dark-mode-on');
+        }
         root.style.setProperty('--primary', 'white');
         root.style.setProperty('--accent', 'black');
         favicon.href = './images/icons/favicon-black.png';
