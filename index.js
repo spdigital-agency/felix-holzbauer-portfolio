@@ -31,3 +31,22 @@ function darkToggle() {
         console.log(darkMode);
     }
 }
+
+
+
+function getImages() {
+    const projectContainer = document.querySelector('.projects--container');
+    let i;
+    for(i=1;i<10;++i) {
+        let img = document.createElement('img');
+        let imgContainer = document.createElement('div');
+        img.src = `./images/images/image (${i}).webp`;
+        img.classList.add('project--img');
+        imgContainer.classList.add('project--img-container')
+        imgContainer.appendChild(img);
+        projectContainer.appendChild(imgContainer);
+    }
+}
+
+getImages();
+
