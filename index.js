@@ -32,21 +32,65 @@ function darkToggle() {
     }
 }
 
-
+/* 
+function checkImage(imageSrc, good, bad) {
+    let image = new Image();
+    image.onload = good; 
+    image.onerror = bad;
+    image.src = imageSrc;
+}
 
 function getImages() {
+
     const projectContainer = document.querySelector('.projects--container');
     let i;
-    for(i=1;i<10;++i) {
-        let img = document.createElement('img');
-        let imgContainer = document.createElement('div');
-        img.src = `./images/images/image (${i}).webp`;
-        img.classList.add('project--img');
-        imgContainer.classList.add('project--img-container')
-        imgContainer.appendChild(img);
-        projectContainer.appendChild(imgContainer);
+    for(i=1;i<9;++i) {
+        
+        let imgSauce = `./images/images/image (${i}).webp`;
+        if(checkImage(imgSauce, function(){ return(true); }, function(){ return(false); } )) {
+            let img = document.createElement('img');
+            let imgContainer = document.createElement('div');
+            img.src = imgSauce;
+            img.classList.add('project--img');
+            imgContainer.classList.add('project--img-container')
+            imgContainer.appendChild(img);
+            projectContainer.appendChild(imgContainer);
+        }
     }
 }
 
 getImages();
+*/
 
+
+function checkImage(imageSrc, callback) {
+    let image = new Image();
+    image.onload = function() {
+      callback(true);
+    }; 
+    image.onerror = function() {
+      callback(false);
+    };
+    image.src = imageSrc;
+  }
+  
+  function getImages() {
+    const projectContainer = document.querySelector('.projects--container');
+  
+    for (let i = 1; i < 10; i++) {
+      let imgSauce = `./images/images/image (${i}).webp`;
+      checkImage(imgSauce, function(imageLoaded) {
+        if (imageLoaded) {
+          let img = document.createElement('img');
+          let imgContainer = document.createElement('div');
+          img.src = imgSauce;
+          img.classList.add('project--img');
+          imgContainer.classList.add('project--img-container');
+          imgContainer.appendChild(img);
+          projectContainer.appendChild(imgContainer);
+        }
+      });
+    }
+  }
+  
+  getImages();
