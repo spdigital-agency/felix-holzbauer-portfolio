@@ -304,3 +304,40 @@ footer {
     max-height: 100%;
     object-fit: contain;
 }
+
+.imprint-container{
+        padding: 0 12rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.imprint-container h2{
+    font-size: var(--text-big);
+    font-weight: 900;
+    margin: 0;
+    margin-top: 8rem;
+    color: var(--accent);
+}
+
+.imprint-subtitle-small{
+    font-size: calc(var(--text-default) * 1.2)
+}
+
+.imprint-subtitle-big{
+    font-size: calc(var(--text-default) * 1.5)
+}
+
+.imprint-subtitle{
+    line-height: 1.6;
+    align-self: center;
+    margin-top: 8rem;
+    color: var(--accent);
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+
+@media (min-width: 320px){
+
+    
+}
