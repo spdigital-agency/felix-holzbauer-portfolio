@@ -6,8 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Felix Holzbauer</title>
 
-    <link rel="stylesheet" href="./styles/style.css">
+    
     <link rel="shortcut icon" href="./images/icons/favicon-black.png" type="image/x-icon">
+
+    <noscript>
+        <style>
+          body {
+            visibility: hidden;
+            opacity: 0;
+          }
+        </style>
+    </noscript>
+    <script type="module" src="./darkMode.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <header>
@@ -22,7 +33,7 @@
                 <li class="nav--item"><a class="nav--link" href="./about.html">About</a></li>
                 <li class="nav--item"><a class="nav--link" href="./projects.html">Projects</a></li>
                 <li class="nav--item"><a class="nav--link" href="./home.html#Contact">Contact</a></li>
-                <li class="nav--item"><button onclick="darkToggle()" class="dark-mode-toggle"><img class="dark-mode-toggle--img" src="./images/icons/moon.svg" alt=""></button></li>
+                <li class="nav--item"><button class="dark-mode-toggle"><img class="dark-mode-toggle--img" src="./images/icons/moon.svg" alt=""></button></li>
             </ul>
         </nav>
     </header>

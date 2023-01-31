@@ -16,6 +16,8 @@
 }
     
 body {
+    visibility: hidden;
+    opacity: 0;
     margin: 0;
     font-family: Roboto;
     background-color: var(--primary);
