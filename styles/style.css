@@ -15,13 +15,16 @@
     --text-big: 12.8rem;
 }
     
+html {
+    overflow-x: hidden;
+}
 body {
     visibility: hidden;
     opacity: 0;
     margin: 0;
     font-family: Roboto;
     background-color: var(--primary);
-    height: 100vh;
+    height: 100%;
     width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -35,7 +38,7 @@ body {
     background-image: url('../images/icons/arrow.webp');
     background-repeat: no-repeat;
     background-position-x: 35vw;
-    background-position-y: 50vh;
+    background-position-y: 65%;
     background-size: 12vw;
 }
 
@@ -402,6 +405,9 @@ footer {
 
 
 @media (max-width: 1150px) {
+    header {
+        padding: 0 8rem;
+    }
     nav {
         position: absolute;
         width: 100vw;
@@ -427,6 +433,12 @@ footer {
     }
     #hamburger-menu {
         display: flex;
+    }
+}
+
+@media (max-width: 390px) {
+    header {
+        padding: 0 4rem;
     }
 }
 
