@@ -446,13 +446,51 @@ footer {
 
 @media (max-width: 390px) {
     header {
-        padding: 0 4rem;
+        padding: 0 2rem;
     }
+    .home--hero{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 4rem;
+    }
+    .home--hero-text h3{
+        width: 65rem;
+        font-size: var(--text-small);
+    }
+    .home--hero-text h1{
+      font-size: 10rem;
+    }
+    .home--hero-img-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+    .home--hero-img{
+        height: 17rem;
+    }
+    .home--projects {
+        margin-top: 3rem;
+        padding: 0 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .home--projects-img-container{
+        margin-top: 3rem;
+    }
+    .home--project-img{
+        height: 15rem;
+    }
+    .home--contact {
+        padding: 0 3rem;
+        display: flex;
+        flex-direction: column;
+}
+    .home--contact-title{
+        font-size: 7.6rem;
+        margin: 4rem 0;
+}
+    .nav--list{
+        display: unset;
 }
 
-
-
-@media (min-width: 320px){
-
-    
 }
