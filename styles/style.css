@@ -256,7 +256,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
     border-top: 3px solid var(--accent);
     font-size: 1.6rem;
     font-weight: 600;
@@ -276,6 +276,14 @@ footer {
 
 .copyright-notice {
     margin: 0;
+    color: var(--accent);
+}
+
+.agency-note {
+    color: var(--accent);
+}
+
+.agency-note > a {
     color: var(--accent);
 }
 
