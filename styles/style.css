@@ -498,4 +498,19 @@ footer {
 .about--content{
     padding: 0px 3rem;
 }
+.projects-title{
+    text-align: center;
+    font-size: var(--text-default);
+}
+.imprint-container{
+    padding: 0 3rem;
+}
+
+.imprint-container h2{
+    font-size: 8rem;
+    margin-top: 4rem;
+}
+.imprint-subtitle{
+    margin-top: 2rem;
+}
 }
