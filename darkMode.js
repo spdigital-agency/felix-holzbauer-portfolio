@@ -48,8 +48,8 @@ window.onload = function() {
         favicon.href = './images/icons/favicon-white.png'
     
         darkMode = 'on';
-        document.body.style.visibility = 'visible';
-        document.body.style.opacity = 1;
     }
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = 1;
   }
   

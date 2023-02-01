@@ -32,3 +32,23 @@ function checkImage(imageSrc, callback) {
   }
   
   getImages();
+
+
+const hamburger = document.querySelector('#hamburger-menu');
+const hamburgerLine = document.querySelector('.hamburger-menu-line');
+let hamburgerOpen = false;
+const nav = document.querySelector('nav');
+let navOpen = false;
+
+
+hamburger.addEventListener('click', () => {
+  if(!hamburgerOpen) {
+    hamburgerLine.classList.add('hamburger-open');
+    hamburgerOpen = true;
+    nav.classList.add('nav-open');
+  } else {
+    hamburgerLine.classList.remove('hamburger-open');
+    hamburgerOpen = false;
+    nav.classList.remove('nav-open');
+  }
+});
