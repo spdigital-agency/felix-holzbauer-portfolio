@@ -492,5 +492,10 @@ footer {
     .nav--list{
         display: unset;
 }
-
+.about--content-title {
+    font-size: 10rem;
+}
+.about--content{
+    padding: 0px 3rem;
+}
 }
