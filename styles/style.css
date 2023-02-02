@@ -33,6 +33,11 @@ body {
     scroll-behavior: smooth;
 }
 
+.big-boy {
+    position: relative;
+    overflow-x: hidden;
+}
+
 #home > .home--background {
     z-index: -1;
     position: absolute;
