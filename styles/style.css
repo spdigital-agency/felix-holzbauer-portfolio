@@ -16,6 +16,7 @@
 }
     
 html {
+    width: 100%;
     overflow-x: hidden;
 }
 body {
@@ -48,6 +49,7 @@ body {
 
 header {
     padding: 0 12rem;
+    width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
