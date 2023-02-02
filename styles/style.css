@@ -25,9 +25,13 @@ body {
     font-family: Roboto;
     background-color: var(--primary);
     height: 100%;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
     scroll-behavior: smooth;
+}
+.big-boy {
+    overflow-x: hidden;
+    width: 100%;
 }
 
 #home > .home--background {

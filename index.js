@@ -73,3 +73,17 @@ hamburger.addEventListener('click', () => {
     nav.classList.remove('nav-open');
   }
 });
+
+
+let root = document.querySelector(':root'); 
+window.onresize = () => {
+  if(window.innerWidth >= 1300) {
+    root.style.setProperty('--text-big', '12.8rem');
+  }
+  if(window.innerWidth < 1300) {
+    root.style.setProperty('--text-big', '9.6rem');
+  }
+  if(window.innerWidth < 820) {
+    root.style.setProperty('--text-big', '6.4rem');
+  }
+}
