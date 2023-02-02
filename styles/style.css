@@ -20,6 +20,7 @@ html {
     overflow-x: hidden;
 }
 body {
+    position: relative;
     visibility: hidden;
     opacity: 0;
     margin: 0;
@@ -432,7 +433,7 @@ transform:translate(0px, -13px) rotate(-45deg);
         position: absolute;
         width: 100vw;
         right: -105vw;
-        top: 10.2rem;
+        top: 10.3rem;
         background-color: var(--primary);
         padding: 2rem 0;
         transition: right .55s ease-in-out;
