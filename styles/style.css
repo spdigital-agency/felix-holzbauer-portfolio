@@ -239,6 +239,10 @@ header {
     max-width: 66rem;
 }
 
+.home--contact-form > input, textarea {
+    border-radius: 0;
+}
+
 .home--contact-form > input:not([type="submit"]) {
     height: 3rem;
 }
@@ -576,6 +580,9 @@ transform:translate(0px, -13px) rotate(-45deg);
 
 @media (max-width: 500px) {
     header {
+        padding: 0 4rem;
+    }
+    .projects--content {
         padding: 0 4rem;
     }
 }

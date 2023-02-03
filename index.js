@@ -75,7 +75,19 @@ hamburger.addEventListener('click', () => {
 });
 
 
-let root = document.querySelector(':root'); 
+let root = document.querySelector(':root');
+window.addEventListener('load', function() {
+  if(window.innerWidth >= 1300) {
+    root.style.setProperty('--text-big', '12.8rem');
+  }
+  if(window.innerWidth < 1300) {
+    root.style.setProperty('--text-big', '9.6rem');
+  }
+  if(window.innerWidth < 820) {
+    root.style.setProperty('--text-big', '6.4rem');
+  }
+});
+
 window.onresize = () => {
   if(window.innerWidth >= 1300) {
     root.style.setProperty('--text-big', '12.8rem');
