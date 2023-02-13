@@ -205,7 +205,7 @@ header {
 }
 
 .home--project-img{
-    height: 35rem;
+    height: 30rem;
     border: 3px solid var(--primary);
 }
 
@@ -214,6 +214,9 @@ header {
     text-decoration: none;
     color: var(--accent);
 }
+
+
+
 
 .home--contact {
     padding: 0 12rem;
